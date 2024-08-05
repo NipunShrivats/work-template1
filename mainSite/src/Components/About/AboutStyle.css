@@ -1,0 +1,57 @@
+.about {
+    /* border: 2px solid red; */
+    color: black;
+    /* margin: 100px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right {
+    flex-basis: 56%;
+}
+
+.about-img {
+    width: 85%;
+    border-radius: 10px;
+}
+
+.play-icon {
+    width: 80px;
+    position: absolute;
+    /* top: 40%; */
+    /* left: 40%; */
+    /* transform: translate(-50%, -50%); */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.play-icon:hover {
+    scale: 1.1;
+}
+
+/* ------------- media query ------------- */
+
+@media(max-width:800px) {
+    .about {
+        flex-direction: column;
+
+    }
+
+    .about-left {
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+        /* order will determine order of image  */
+    }
+}

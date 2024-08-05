@@ -1,0 +1,39 @@
+.footer {
+    /* border: 2px solid red; */
+    color: black;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding-top: 1rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.footer ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+/* ------------- media query ------------- */
+
+@media(max-width:800px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer ul li {
+        margin: 10px;
+    }
+
+    .footer ul {
+        margin-top: 10px;
+    }
+}

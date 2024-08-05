@@ -1,0 +1,147 @@
+.testimonials {
+    /* border: 2px solid red; */
+    color: black;
+    padding: 0 80px;
+    position: relative;
+    /* height: 20rem; */
+    margin-bottom: 0px;
+}
+
+
+.next-btn,
+.prev-btn {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    /* margin: 50px; */
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    /* color: white; */
+    /* font-size: 22px; */
+    transition: 0.3s;
+    /* display: flex; */
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+    background-color: rgb(95, 95, 95);
+    /* color: white; */
+}
+
+.next-btn svg,
+.prev-btn svg {
+    color: white;
+    /* font-size: 22px; */
+    /* border: 2px solid red; */
+}
+
+.prev-btn {
+    left: -15px;
+}
+
+.next-btn {
+    right: -15px;
+}
+
+.slider {
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.slider ul {
+    /* border: 2px solid red; */
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* transform: translateX(-25%); */
+}
+
+.slider ul li {
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 2rem;
+}
+
+.slide {
+    /* border: 2px solid red; */
+    box-shadow: 3px 5px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.slide img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212EA0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* ------------- media query ------------- */
+
+@media(max-width:800px) {
+    .testimonials {
+        padding: 0 40px;
+    }
+
+    .next-btn,
+    .prev-btn {
+        padding: 10px;
+        width: 35px;
+    }
+
+    .testimonials {
+        padding: 10px;
+    }
+
+    .slide {
+        padding: 10px;
+    }
+
+    .slide img {
+        width: 50px;
+        border: 3px solid #212EA0;
+    }
+
+    .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .user-info h3 {
+        font-size: 16px;
+    }
+
+    .slider p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .user-info h3 {
+        font-size: 16px;
+    }
+
+    .slider p {
+        font-size: 12px;
+    }
+}
